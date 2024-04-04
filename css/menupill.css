@@ -1,0 +1,102 @@
+#menupillContainer {
+
+    position: fixed;
+    z-index: 3;
+    height: 100%;
+}
+
+#menuPill {
+
+    /* --menu-bg-color: rgba(0,0,0,0.7); for CSS use -- before ur variable to declare it */
+
+    margin-left: 1rem;
+}
+
+#menuPill .nav-link {
+
+
+     /* override bootstrap's navbar colors */
+     
+     --bs-navbar-active-color: var(--bac-theme-400);
+     --bs-nav-active-color: var(--bac-theme-200);
+     --bs-nav-link-hover-color: var(--bac-theme--200);
+    display: flex;
+    align-items: center;
+    padding: 0;
+    max-width: 36px;
+    transition: max-width 0.25s ease-in-out;
+
+}
+
+#menuPill .nav-link:hover,
+#menuPill .nav-link.active {
+
+    max-width: 300px;
+}
+
+
+#menuPill .icon-container {
+    background-color: rgba(0,0,0,0.7);
+    padding: .5rem;
+
+}
+
+#menuPill .menu-label {
+
+    padding: .5rem 0;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 0 2rem 2rem 0;
+    max-width: 0%;
+    white-space: nowrap; /* allows text break through its container and not wrap to next line */
+    overflow: hidden; /* anything going past container is hidden */
+
+    transition: max-width 0.25s ease-in-out,
+        padding-right 0.25s ease-in-out;
+}
+
+/* desktop view */
+@media (min-width: 768px ) {
+
+    #menuPill>.nav-item:nth-child(1) .icon-container {
+
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        transition: border-top-right-radius 0.1s ease-out 0.25s;
+    }
+
+    #menuPill>.nav-item:nth-child(1)>.nav-link:hover .icon-container {
+
+        border-top-right-radius: 0;
+        transition-duration: 0s;
+        transition-delay: 0s;
+    }
+
+
+
+    #menuPill>.nav-item:nth-last-child(1) .icon-container {
+
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        transition: border-bottom-right-radius 0.1s ease-out 0.25s;
+    }
+
+    #menuPill>.nav-item:nth-last-child(1)>.nav-link:hover .icon-container {
+        
+        border-bottom-right-radius: 0;
+        transition-duration: 0s;
+        transition-delay: 0s;
+    }
+
+    #menuPill .nav-link:hover .menu-label, 
+    #menuPill .nav-link.active .menu-label {
+        max-width: 100%;
+        padding-right: 1rem;
+    }
+
+}
+
+/* mobile view */
+@media (max-width: 767.98) {
+
+
+}
