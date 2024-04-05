@@ -219,6 +219,18 @@ footer .bi:hover {
 /* Media Queries */
 
 /*  Small devices (landscape phones, 576px and up) */
+@media (min-width: 359px) {
+
+    .bug-tracker
+
+    {
+
+        font-size: 1rem
+    }
+
+}
+
+
 @media (min-width: 576px) {
 
     .mainTitle {
@@ -231,6 +243,13 @@ footer .bi:hover {
         line-height: 1.2rem;
         letter-spacing: .19rem;
         padding-top: .25rem;
+    }
+
+    .bug-tracker
+
+    {
+
+        font-size: 1rem
     }
 
 
