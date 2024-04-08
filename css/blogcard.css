@@ -1,0 +1,76 @@
+.blog-article {
+    border-radius: 15px;
+    margin-top: 3rem;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.blog-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.8);
+    transition: transform .3 ease;
+}
+
+.blog-image:hover {
+
+    transform: scale(1.1);
+}
+
+.blog-header{
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-date {
+
+    position: absolute;
+    bottom: .5rem;
+    left: 1rem; 
+    font-family: var(--bac-title-font);
+    font-weight: bolder;
+    color: rgba(255,255,255,.7);
+    line-height: 3.5rem;
+}
+
+.blog-month {
+
+    font-size: 3em;
+
+}
+
+.blog-day {
+
+    font-size: 6rem;
+}
+
+.line-clamp {
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+
+}
+
+.blog-article:nth-child(odd)>.blog-row{ /* selects only the odd childs from the blog article class*/
+
+    flex-direction: row-reverse;
+
+}
+
+.blog-article:nth-child(odd) .blog-btn {
+
+    align-items: end; 
+    display: flex; 
+    flex-direction: column;
+    
+}
+
+.card-text {
+
+    margin-top: .7rem;
+}
