@@ -8,7 +8,7 @@
 
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="img/light-logo - favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/light-logo - favicon.svg" type="image/x-icon">
 
     <!-- bootstrap css -->
 
@@ -113,7 +113,7 @@
             <div id="homeCover">
                 <div class="mainHeader text-center">
                     <div class="mainTitle">
-                        <!--Dane--><img src="/img/light-logo.svg" class="img-fluid">
+                        <!--Dane--><img src="/img/light-logo-bc.svg" class="img-fluid">
                     </div>
                     <!-- <div class="mainTitle">Whitman</div>
                     <div class="subTitle">Software Developer</div> -->
@@ -453,132 +453,37 @@
             <div class="container">
                 <h2 class="text-center display-1 mb-5">My Dev Blog</h2>
                 <p>
-
-                    I write on my blog alot. I think its important to share my progress on a daily basis I enjoy a good
-                    time
+                    This is my personal dev blog, it is mostly populated with topics I find interesting and decide to write about. Check them out to learn more about what I'm working on.
                 </p>
 
                 <div id="blogs">
-                    <article class="card mb-4 blog-article">
-                        <div class="row g-0 blog-row">
-                            <div class="col-lg-4 blog-header">
-                                <a href="#" class="blog-image-link">
-                                    <img src="/img/Blog/Blog_FlyingGirl.jpg" class="blog-image" alt="Flying Girl" />
-                                </a>
-                                <div class="blog-date">
-                                    <div class="blog-day">11</div>
-                                    <div class="blog-month">JANUARY</div>
+                    <template id="blog-card-template">
+                        <article class="card mb-4 blog-article">
+                            <div class="row g-0 blog-row">
+                                <div class="col-lg-4 blog-header">
+                                    <a href="#" class="blog-image-link">
+                                    </a>
+                                    <div class="blog-date">
+                                        <div class="blog-day"></div>
+                                        <div class="blog-month"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="card-body h-100 d-flex flex-column justify-content-around">
-                                    <h2 class="card-title">MAKE SQL QUERIES Flying</h2>
-                                    <p class="card-text line-clamp">
-                                        We apply the proverb 'Look before you leap' not only to our content but our
-                                        power to repurpose. A company that can synthesize courageously will
-                                        (eventually)
-                                        be able to transition easily. Imagine a combination of HTTP and AJAX. We
-                                        will
-                                        revalue our aptitude to empower without depreciating our capability to
-                                        implement
-                                        wirelessly leads to the capacity to synthesize interactively. Without
-                                        niches,
-                                        you will lack architectures. Spriti introduced new capabilities to the
-                                        awards
-                                        page of the customer journey.
-                                    </p>
-                                    <div class= "blog-btn">
-                                        <div class="">
+                                <div class="col-lg-8">
+                                    <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                        <h2 class="card-title"></h2>
+                                        <p class="card-text line-clamp">
+                                        </p>
+                                        <div>
                                             <a href="#" class="btn btn-primary">Read More</a>
                                         </div>
                                         <p class="card-text">
-                                            <small class="text-muted">Published 3 days ago</small>
+                                            <small class="text-muted"></small>
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="card mb-4 blog-article">
-                        <div class="row g-0 blog-row">
-                            <div class="col-lg-4 blog-header">
-                                <a href="#" class="blog-image-link">
-                                    <img src="/img/Blog/Blog_Database.jpg" class="blog-image" alt="Flying Girl" />
-                                </a>
-                                <div class="blog-date">
-                                    <div class="blog-day">12</div>
-                                    <div class="blog-month">FEBRUARY</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="card-body h-100 d-flex flex-column justify-content-around">
-                                    <h2 class="card-title">DATABASE, DATABASE, DATABASE</h2>
-                                    <p class="card-text line-clamp">
-                                        We apply the proverb 'Look before you leap' not only to our content but our
-                                        power to repurpose. A company that can synthesize courageously will
-                                        (eventually)
-                                        be able to transition easily. Imagine a combination of HTTP and AJAX. We
-                                        will
-                                        revalue our aptitude to empower without depreciating our capability to
-                                        implement
-                                        wirelessly leads to the capacity to synthesize interactively. Without
-                                        niches,
-                                        you will lack architectures. Spriti introduced new capabilities to the
-                                        awards
-                                        page of the customer journey.
-                                    </p>
-                                    <div class="blog-btn">
-                                        <div class="blog-btn">
-                                            <a href="#" class="btn btn-primary">Read More</a>
-                                        </div>
-                                        <p class="card-text">
-                                            <small class="text-muted">Published 3 days ago</small>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="card mb-4 blog-article">
-                        <div class="row g-0 blog-row">
-                            <div class="col-lg-4 blog-header">
-                                <a href="#" class="blog-image-link">
-                                    <img src="/img/Blog/Blog_DecisionRoad.jpg" class="blog-image" alt="Flying Girl" />
-                                </a>
-                                <div class="blog-date">
-                                    <div class="blog-day">11</div>
-                                    <div class="blog-month">JANUARY</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="card-body h-100 d-flex flex-column justify-content-around">
-                                    <h2 class="card-title">MAKE SQL QUERIES Flying</h2>
-                                    <p class="card-text line-clamp">
-                                        We apply the proverb 'Look before you leap' not only to our content but our
-                                        power to repurpose. A company that can synthesize courageously will
-                                        (eventually)
-                                        be able to transition easily. Imagine a combination of HTTP and AJAX. We
-                                        will
-                                        revalue our aptitude to empower without depreciating our capability to
-                                        implement
-                                        wirelessly leads to the capacity to synthesize interactively. Without
-                                        niches,
-                                        you will lack architectures. Spriti introduced new capabilities to the
-                                        awards
-                                        page of the customer journey.
-                                    </p>
-                                    <div class= "blog-btn">
-                                        <div class="">
-                                            <a href="#" class="btn btn-primary">Read More</a>
-                                        </div>
-                                        <p class="card-text">
-                                            <small class="text-muted">Published 3 days ago</small>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                        </article>
+                    </template>
                 </div>
             </div>
         </section>
@@ -602,13 +507,12 @@
                 <div class="row mb-1">
                     <div class="col">
                         <label class="form-label">Email</label>
-                        <input type="email" name="email" class="form-control" placeholder="Email"
-                            aria-label="Email" required>
+                        <input type="email" name="email" class="form-control" placeholder="Email" aria-label="Email"
+                            required>
                     </div>
                     <div class="col">
                         <label class="form-label">Phone (optional)</label>
-                        <input type="text" name="phone" class="form-control" placeholder="Phone"
-                            aria-label="Phone">
+                        <input type="text" name="phone" class="form-control" placeholder="Phone" aria-label="Phone">
                     </div>
                 </div>
                 <div class="row mb-1">
@@ -994,7 +898,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
+    <script src="/js/blogApi.js"></script>
     <script>const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))</script>
 </body>
