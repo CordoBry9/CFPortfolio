@@ -1,16 +1,16 @@
 // you can test this locally by running your blog and using your localhost url,
 // but the BASE_URL must NOT be a localhost url when you push your changes to netlify
 
-const BASE_URL = 'https://bryan-cordova-blog.up.railway.app/'; // NOTE: with no / at the end!
+const BASE_URL = 'https://bryan-cordova-blog.up.railway.app'; // NOTE: with no / at the end!
 const DEFAULT_BLOG_IMAGE = '/img/penandpaper.jpg';
 // e.g. '/images/DefaultBlogImage.jpg';
 
-function fetchBlogData(){
+function fetchBlogData() {
     fetch(`${BASE_URL}/api/blogposts/?page=1&pageSize=4`)
-    .then(response => response.json())
-    .then(pagedList => {
-        displayBlogPosts(pagedList.data);
-    });
+        .then(response => response.json())
+        .then(pagedList => {
+            displayBlogPosts(pagedList.data);
+        });
 }
 
 function displayBlogPosts(blogPosts) {
