@@ -1,7 +1,7 @@
 // you can test this locally by running your blog and using your localhost url,
 // but the BASE_URL must NOT be a localhost url when you push your changes to netlify
 
-const BASE_URL = 'https://bryan-cordova-blog.up.railway.app/'; // NOTE: with no / at the end!
+const BASE_URL = 'https://bryan-cordova-blog.up.railway.app'; // NOTE: with no / at the end!
 const DEFAULT_BLOG_IMAGE = '/img/penandpaper.jpg';
 // e.g. '/images/DefaultBlogImage.jpg';
 
@@ -30,7 +30,7 @@ function displayBlogPosts(blogPosts) {
         let imgTag = document.createElement('img');
         imgTag.setAttribute(
             "src",
-            BASE_URL + (blogPost.imageUrl || DEFAULT_BLOG_IMAGE)
+            BASE_URL + ( "/" + (blogPost.imageUrl || DEFAULT_BLOG_IMAGE))
         );
         imgTag.classList.add('blog-image');
         imageDiv.appendChild(imgTag);
