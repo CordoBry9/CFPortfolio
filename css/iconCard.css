@@ -1,6 +1,6 @@
 .icon-card {
     height: 100%;
-    transition: transform 0.25 ease-in-out;
+    transition: transform 0.25s ease-in-out;
 }
 
 .icon {
